@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Reservation extends Model
 {
-    protected $fillable = ['name','email','phone','date','time','nbrPerson','comment'];
+    protected $fillable = ['name','email','phone','date','time','nbrPerson','comment','table_id'];
+    
+
+    public function table()
+    {
+        return $this->hasOne('App\Models\Table');
+    }
 }

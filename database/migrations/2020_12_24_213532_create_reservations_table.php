@@ -22,6 +22,12 @@ class CreateReservationsTable extends Migration
             $table->time('time');
             $table->integer('nbrPerson');
             $table->text('comment')->nullable();
+
+            $table->unsignedBigInteger('table_id')->index();
+            
+            $table->foreign('table_id')->references('id')
+                                       ->on('tables')
+                                       ->onDelete('cascade');
             $table->timestamps();
         });
     }

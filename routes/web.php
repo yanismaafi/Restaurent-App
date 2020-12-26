@@ -22,3 +22,9 @@ Route::get('/', function () {
 Route::post('/contact',[ContactController::class,'contact'])->name('contact');
 
 Route::post('/reservation',[ReservationController::class,'ReservationTable'])->name('reservation');
+
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
