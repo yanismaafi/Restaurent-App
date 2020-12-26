@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ReservationController;
 
@@ -15,10 +16,7 @@ use App\Http\Controllers\ReservationController;
 |
 */
 
-Route::get('/', function () {
-    return view('restaurent.home');
-});
-
+Route::get('/', [HomeController::class,'index']);
 Route::post('/contact',[ContactController::class,'contact'])->name('contact');
 
 Route::post('/reservation',[ReservationController::class,'ReservationTable'])->name('reservation');
