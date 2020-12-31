@@ -26,7 +26,7 @@ function reservation() {
 
             if(data == 'success')
             {
-                const Toast = Swal.mixin({
+                  const Toast = Swal.mixin({
                     toast: true,
                     position: 'bottom-right',
                     showConfirmButton: false,
@@ -39,17 +39,28 @@ function reservation() {
                   })
 
                   Toast.fire({
-                    icon: 'success',
+                    icon:  'success',
                     title: 'Votre réservation a été effectué avec succès.'
                   })
 
-                  resetInput();
-
-            }else
+                  //resetInput();
+            }
+            else
             {
-              printErrorMsg(data.responseJSON.errors);
+                const Toast = Swal.mixin({
+                  toast: true,
+                  position: 'bottom-right',
+                  showConfirmButton: false,
+                  timer: 3500,
+                })
+
+                Toast.fire({
+                  icon: 'error',
+                  title: 'Echec, votre reservation n\'a pas pu etre effectué.'
+                });
             }
         },
+
 
         error:function(data){
 

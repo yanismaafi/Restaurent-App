@@ -51,7 +51,7 @@
   
             <div class="col-lg-8 mt-5 mt-lg-0">
 
-              <div class="alert alert-danger print-error-msg" style="display:none">
+              <div class="alert alert-danger error-msg" style="display:none">
               </div>
   
               <form method="POST" role="form" id="ContactForm" class="php-email-form" autocomplete="off">

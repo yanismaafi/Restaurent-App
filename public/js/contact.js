@@ -40,11 +40,11 @@ function sendMsg() {
                     title: 'Votre message a été envoyé.'
                   })
 
-                  resetInput();
+                  resetContactInput();
 
             }else
             {
-              printErrorMsg(data.responseJSON.errors);
+              ErrorMsg(data.responseJSON.errors);
             }
 
         },
@@ -64,33 +64,33 @@ function sendMsg() {
                 title: 'Echec, votre message n\'a pas pu etre envoyé.'
               });
 
-              printErrorMsg(data.responseJSON.errors);
+              ErrorMsg(data.responseJSON.errors);
         }
 
     });
 }
 
 
-function printErrorMsg (msg) {
+function ErrorMsg (msg) {
 
   resetAlert();
-  $(".print-error-msg").append('<ul></ul>');
-  $(".print-error-msg").css('display','block');
+  $(".error-msg").append('<ul></ul>');
+  $(".error-msg").css('display','block');
 
   $.each( msg, function(key,value ) {
 
-      $(".print-error-msg").find("ul").append('<li>'+value+'</li>');
+      $(".error-msg").find("ul").append('<li>'+value+'</li>');
 
   });
 
 }
 
-function resetInput()
+function resetContactInput()
 {
   $("#ContactForm")[0].reset();
 }
    
 function resetAlert()
 {
-  $(".print-error-msg").find("ul").remove();
+  $(".error-msg").find("ul").remove();
 }

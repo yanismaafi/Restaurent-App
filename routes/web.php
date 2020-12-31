@@ -17,10 +17,10 @@ use App\Http\Controllers\ReservationController;
 */
 
 Route::get('/', [HomeController::class,'index']);
+
 Route::post('/contact',[ContactController::class,'contact'])->name('contact');
 
 Route::post('/reservation',[ReservationController::class,'ReservationTable'])->name('reservation');
-
 
 
 Route::group(['prefix' => 'admin'], function () {

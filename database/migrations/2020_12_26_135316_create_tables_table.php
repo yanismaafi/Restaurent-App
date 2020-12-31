@@ -17,8 +17,14 @@ class CreateTablesTable extends Migration
             $table->id();
             $table->integer('table_number');
             $table->integer('nbrPlaces');
-            
+            $table->boolean('reserved');
             $table->timestamps();
+
+            $table->unsignedBigInteger('reservation_id')->index()->nullable();
+            
+            $table->foreign('reservation_id')->references('id')
+                                             ->on('reservations')
+                                             ->onDelete('set null');
         });
     }
 

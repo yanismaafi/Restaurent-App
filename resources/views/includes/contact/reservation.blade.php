@@ -11,7 +11,7 @@
           </div>
 
           <form method="POST" role="form" id="ReservationForm" class="php-email-form" data-aos="fade-up" data-aos-delay="100" autocomplete="off">
-           @csrf 
+          @csrf 
 
             <div class="form-row">
 
