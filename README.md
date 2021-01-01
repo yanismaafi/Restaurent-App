@@ -1,62 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
+
+<!-- PROJECT LOGO -->
+<br />
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="https://github.com/yanismaafi/Restaurent-App">
+    <img src="img/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Restaurent App</h3>
+
+  <p align="center">
+     Web application to contact the restaurant, book a table or order.
+    <br />
+  </p>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Screenshot</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![Capture d’écran du 2021-01-01 15-09-01](https://user-images.githubusercontent.com/73799452/103440118-5820da80-4c43-11eb-819e-d6b62d1f6009.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+RestaurentApp is a web application allowing customers to contact the restaurant and reserve a table.
+The application allows the restaurant owner to manage his restaurant by modifying the menu dynamically, to consult the messages and opinions of customers, etc.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Built With
 
-### Premium Partners
+* [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
+* [Laravel v8](https://laravel.com)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<!-- FEATURES -->
+## Features
 
-## Code of Conduct
+Clients :
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+* Contact the restaurant
+* To book a table
+* Consult the menu
 
-## Security Vulnerabilities
+Administrator :
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* Manage reservations
+* Manage menu
+* Manage users and their roles
+* Manage customer messages
 
-## License
+<!-- SCREENSHOT -->
+## Screenshot
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Book a table :
+![reservation](https://user-images.githubusercontent.com/73799452/103440168-ae8e1900-4c43-11eb-8b8a-b87b9a72f55a.png)
+
+Dynamic menu :
+![Capture d’écran du 2021-01-01 15-13-49](https://user-images.githubusercontent.com/73799452/103440203-fb71ef80-4c43-11eb-9f3d-074408e561fb.png)
+
+Admin Pannel :
+![categorie](https://user-images.githubusercontent.com/73799452/103440918-00d23880-4c4a-11eb-8804-756aeccc789d.png)
+
+![menus](https://user-images.githubusercontent.com/73799452/103440923-0b8ccd80-4c4a-11eb-9325-7b5738722a56.png)
+
+Manage Users :
+![adminPannel](https://user-images.githubusercontent.com/73799452/103440967-95d53180-4c4a-11eb-88ac-5b22f418b070.png)
+
+
+<!-- CONTACT -->
+## Contact
+
+- Email : yanismaafi@gmail.com
+- ![My Youtube Channel](https://www.youtube.com/channel/UC0_Xt0C99L9kCTSR_cu6iTw)
