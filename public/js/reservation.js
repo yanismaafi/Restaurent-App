@@ -43,9 +43,9 @@ function reservation() {
                     title: 'Votre réservation a été effectué avec succès.'
                   })
 
-                  //resetInput();
+                  resetInput();
             }
-            else
+            else if(data == 'not available')
             {
                 const Toast = Swal.mixin({
                   toast: true,
@@ -56,7 +56,7 @@ function reservation() {
 
                 Toast.fire({
                   icon: 'error',
-                  title: 'Echec, votre reservation n\'a pas pu etre effectué.'
+                  title: 'Pas de table disponible pour le moment,réesayer plutard.'
                 });
             }
         },

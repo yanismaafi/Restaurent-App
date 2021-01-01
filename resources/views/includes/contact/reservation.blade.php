@@ -16,12 +16,12 @@
             <div class="form-row">
 
               <div class="col-lg-4 col-md-6 form-group">
-                <input type="text" name="Rname" class="form-control" id="name" placeholder="Votre Nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                <input type="text" name="Rname" class="form-control" id="name" placeholder="Votre Nom" data-rule="minlen:4" data-msg="Veuillez saisir au moins 4 caractères" required>
                 <div class="validate"></div>
               </div>
 
               <div class="col-lg-4 col-md-6 form-group">
-                <input type="email" class="form-control" name="Remail" id="email" placeholder="Votre Email" data-rule="email" data-msg="Please enter a valid email" required>
+                <input type="email" class="form-control" name="Remail" id="email" placeholder="Votre Email" data-rule="email" data-msg="Veuillez saisir un e-mail valide" required>
                 <div class="validate"></div>
               </div>
 
@@ -32,19 +32,19 @@
               
               <div class="col-lg-4 col-md-6 form-group">
                 <label for="date">Date :</label>
-                <input type="date" name="date" class="form-control" id="date" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                <input type="date" name="date" class="form-control" id="date" required>
                 <div class="validate"></div>
               </div>
 
               <div class="col-lg-4 col-md-6 form-group">
                 <label for="time">Heure :</label>
-                <input type="time" class="form-control" name="time" id="time" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                <input type="time" class="form-control" name="time" id="time" min="11:30" max="23:00" required>
                 <div class="validate"></div>
               </div>
 
               <div class="col-lg-4 col-md-6 form-group">
                 <label for="people">Nombre de personne :</label>
-                <input type="number" class="form-control" name="nbrPerson" id="people" min="1" max="20" placeholder="Nombre de personne" data-rule="minlen:1" data-msg="Please enter at least 1 chars" required>
+                <input type="number" class="form-control" name="nbrPerson" id="people" min="1" max="20" placeholder="Nombre de personne" data-rule-number required>
                 <div class="validate"></div>
               </div>
 

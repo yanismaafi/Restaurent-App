@@ -20,29 +20,29 @@
               <div class="info">
                 <div class="address">
                   <i class="icofont-google-map"></i>
-                  <h4>Location:</h4>
+                  <h4>Adresse :</h4>
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
   
                 <div class="open-hours">
                   <i class="icofont-clock-time icofont-rotate-90"></i>
-                  <h4>Open Hours:</h4>
+                  <h4>Heures d'ouverture :</h4>
                   <p>
-                    Monday-Saturday:<br>
-                    11:00 AM - 2300 PM
+                    Samedi-Jeudi :<br>
+                    11:00 AM - 23:00 PM
                   </p>
                 </div>
   
                 <div class="email">
                   <i class="icofont-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <h4>Email :</h4>
+                  <p>RestaurentApp@gmail.com</p>
                 </div>
   
                 <div class="phone">
                   <i class="icofont-phone"></i>
-                  <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <h4>N° Tél :</h4>
+                  <p>021 23 46 55</p>
                 </div>
   
               </div>

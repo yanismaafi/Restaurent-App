@@ -14,8 +14,7 @@ class ReservationController extends Controller
     {
         $table = Table::where('nbrPlaces',$request->nbrPerson)
                        ->where('reserved',false)->first();
-
-                      
+             
         if(!Empty($table))
         {
             $reservation = new Reservation();
@@ -32,19 +31,20 @@ class ReservationController extends Controller
               $reservation->comment = $request->comment;
             }
 
-            $table->reserved = true;
-            $reservation->save();
+            $saved = $reservation->save();
 
-            $table->reservation()->associate($reservation);
+            $table->reservation()->associate($reservation); // each reservation is linked to a table
+
+            $table->reserved = true;
             $table->save();
 
-  
-            return response()->json("success");
+            if($saved)
+            {
+              return response()->json("success");
+           
+            }else { return response()->json('failed');  }
 
-             
-        
-        }else {  
-                return response()->json('not available'); 
-              }                
+
+        }else {  return response()->json('not available');  }                
     }
 }

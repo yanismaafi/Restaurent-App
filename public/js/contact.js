@@ -73,7 +73,7 @@ function sendMsg() {
 
 function ErrorMsg (msg) {
 
-  resetAlert();
+  resetContactAlert();
   $(".error-msg").append('<ul></ul>');
   $(".error-msg").css('display','block');
 
@@ -89,8 +89,8 @@ function resetContactInput()
 {
   $("#ContactForm")[0].reset();
 }
-   
-function resetAlert()
+
+function resetContactAlert()
 {
   $(".error-msg").find("ul").remove();
 }
