@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/yanismaafi/Restaurent-App">
-    <img src="img/logo.png" alt="Logo" width="80" height="80">
+    <img src="public/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Restaurent App</h3>
@@ -89,5 +89,5 @@ Manage Users :
 <!-- CONTACT -->
 ## Contact
 
-- Email : yanismaafi@gmail.com
-- ![My Youtube Channel](https://www.youtube.com/channel/UC0_Xt0C99L9kCTSR_cu6iTw)
+* Email : yanismaafi@gmail.com
+* ![Youtube Channel](https://www.youtube.com/channel/UC0_Xt0C99L9kCTSR_cu6iTw)
