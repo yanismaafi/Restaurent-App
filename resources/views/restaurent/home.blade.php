@@ -93,7 +93,7 @@
               {{-- <li data-filter="*" class="filter-active">All</li> --}}
               @foreach ($dishes_categories as $category)
 
-                <li data-filter=".filter-{{ $category->name }}">{{ $category->name }}</li>
+                <li data-filter=".filter-{{ str_replace(' ', '_' ,$category->name) }}">{{ $category->name }}</li>
 
               @endforeach
             </ul>

@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $dishes = Dish::all();
+        $dishes = Dish::orderBy('price','ASC')->get();
         $dishes_categories = Category::all();
 
         return view('restaurent.home',compact('dishes','dishes_categories'));
