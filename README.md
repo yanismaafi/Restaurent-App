@@ -58,7 +58,7 @@ The application allows the restaurant owner to manage his restaurant by modifyin
 Clients :
 
 * Contact the restaurant
-* To book a table
+* Book a table
 * Consult the menu
 
 Administrator :
